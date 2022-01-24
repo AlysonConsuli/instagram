@@ -2,86 +2,97 @@ body{
     font-family: "Roboto", sans-serif;
     background-color: #E5E5E5;
 }
+* {
+	box-sizing: border-box;
+}
+.topo-total{
+    width: 100%;
+    height: 54px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DBDBDB;
+    position: fixed;
+    z-index: 2;
+}
 .topo{
     width: 935px;
     height: 54px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: red;
+    background-color: #FFFFFF;
     position: fixed;
     left: 50%;
     margin-left: -467.5px;
-    z-index: 2;
-}
-.topo-total{
-    width: 100%;
-    height: 54px;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid green;
-    position: fixed;
     z-index: 1;
+    border-bottom: 1px solid #DBDBDB;
 }
-.separacao{
+.separacao {
     width: 1px;
     height: 22px;
-    background-color: blue;
-}
-.logo{
+    background-color: #dbdbdb;
+    margin: 15px 0 17px 0;
+  }
+  .logo {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 100%;
     width: 150px;
-    background-color: yellow;
-}
-.logo-desk{
+    background-color: #ffffff;
+  }
+  
+  .logo ion-icon {
+    padding: 16px 0;
+  }
+  
+  .logo-desk {
     width: 103px;
     height: 29px;
-}
+    background-color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
 .pesquisar{
     width: 215px;
     height: 28px;
-    background-color: blue;
-    border: 1px solid yellow;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
     border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.pesquisar p{
+    color: #979797;
+}
 .icones{
     height: 100%;
     width: 144px;
-    background-color: purple;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 ion-icon{
-    width: 22px;
-    height: 22px;
+    font-size: 22px;
 }
-
 .conteudo{
     width: 935px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    background-color: blue;
-    height: auto;
+    background-color: #E5E5E5;
+    gap: 28px;
 }
 .container-stories{
     width: 614px;
     height: 118px;
     margin-top: 88px;
     margin-bottom: 24px;
-    background-color: red;
+    background-color: #FFFFFF;
     display: flex;
-    /*justify-content: space-between;*/
     align-items: center;
     overflow: hidden;
     position: relative;
-    border: 1px solid yellow;
+    border: 1px solid #DBDBDB;
     border-radius: 3px;
 }
 .container-stories img{
@@ -102,7 +113,7 @@ ion-icon{
 .box-stories{
     width: 66px;
     height: 86px;
-    background-color: yellow;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,12 +130,15 @@ p{
 }
 .sidebar{
     width: 293px;
-    background-color: purple;
-    margin-top: 88px;
+    height: 446px;
+    background-color: #E5E5E5;
+    position: sticky;
+    top: 88px;
+    right: 0;
 }
 .primeiro-sidebar{
     height: 56px;
-    background-color: green;
+    background-color: #E5E5E5;
     display: flex;
     align-items: center;
 }
@@ -146,7 +160,7 @@ h2{
     color: #8E8E8E;
 }
 .sep{
-    background-color: orange;
+    background-color: #E5E5E5;
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
@@ -171,7 +185,7 @@ h2{
 }
 .sugestao{
     height: 32px;
-    background-color: greenyellow;
+    background-color: #E5E5E5;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -189,7 +203,7 @@ h3{
 }
 .direitos{
     height: 74px;
-    background-color: goldenrod;
+    background-color: #E5E5E5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -205,9 +219,8 @@ h4{
 }
 .publicacao{
     width: 614px;
-    height: 749px;
-    background-color: yellow;
-    border: 1px solid black;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
     border-radius: 3px;
     margin-bottom: 60px;
 }
@@ -226,32 +239,30 @@ h4{
     margin-right: 15px;
 }
 .topo-publi{
-    height: 32px;
+    height: 60px;
+    width: 100%;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: green;
-    margin: 13px 17px 14px 17px;
+    padding: 0 17px;
 }
 .img-principal{
-    height: 612px;
-    width: 612px
+    width: 612px;
 }
 .icones-3{
-    width: 91px;
-    height: 18px;
-    background-color: green;
+    width: 92px;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .borda{
-    height: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: purple;
-    /*margin: 8px 18px 0 18px;*/
+    background-color: #FFFFFF;
+    padding: 0 15px;
 }
 .curtido img{
     width: 20px;
@@ -265,20 +276,59 @@ strong{
 .curtido{
     display: flex;
     align-items: center;
-    height: 20px;
-    background-color: red;
+    background-color: #FFFFFF;
+    padding-left: 17px;
+}
+
+.comentarios{
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 17px;
+}
+
+.comentarios ion-icon{
+    font-size: 16px;
+    margin-left: 20px;
 }
 .fundo{
-    height: 72px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    background-color: yellowgreen;
-    margin: 0 17px;
+    background-color: #FFFFFF;
+    gap: 13px;
+    padding: 13px 0;
+}
+.digite-aqui{
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 0 17px;
+}
+.digite-aqui input{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: black;
+}
+.digite-aqui ion-icon {
+    font-size: 22px;
+    margin-right: 14px;
+  }
+.publicar{
+    background-color: #B2DFFC;
+    display: flex;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+    border-radius: 1px;
+    margin-left: 20px;
+}
+.publicar:hover{
+    background-color: #0095F6;
+    transition: 300ms;
+    cursor: pointer;
 }
 .container-stories ion-icon{
-    width: 26px;
-    height: 26px;
+    font-size: 26px;
     position: absolute;
     right: 0;
     top: 46px;
@@ -289,7 +339,6 @@ strong{
 .logo-mobile{
     display: none;
 }
-
 .borda-mobile{
     display: none;
 } 
@@ -321,6 +370,9 @@ strong{
 .logo{
     width: auto;
 }
+.logo-mobile{
+    margin-top: 10px;
+}
 .separacao{
     display: none;
 }
@@ -343,7 +395,7 @@ strong{
     display: block;
     width: 103px;
     height: 29px;
-    background-color: goldenrod;
+    background-color: #FFFFFF;
 }
 .container-stories ion-icon{
     display: none;
@@ -354,6 +406,10 @@ strong{
     margin-bottom: 0;
     border: none;
     border-radius: 0;
+    background-color: #E5E5E5;
+}
+.box-stories{
+    background-color: #E5E5E5;
 }
 .publicacao{
     width: 100%;
@@ -375,12 +431,12 @@ strong{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: green;
+    background-color: #FFFFFF;
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 2;
-    border-top: 1px solid purple;
+    z-index: 1;
+    border-top: 1px solid #DBDBDB;
 }
 .borda-mobile ion-icon:first-child{
     margin-left: 20px;
