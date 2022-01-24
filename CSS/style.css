@@ -315,15 +315,14 @@ strong{
     margin-right: 14px;
   }
 .publicar{
-    background-color: #B2DFFC;
+    color: #B2DFFC;
     display: flex;
     align-items: center;
-    border: 1px solid #DBDBDB;
     border-radius: 1px;
     margin-left: 20px;
 }
 .publicar:hover{
-    background-color: #0095F6;
+    color: #0095F6;
     transition: 300ms;
     cursor: pointer;
 }
