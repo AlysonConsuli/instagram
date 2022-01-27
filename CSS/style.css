@@ -1,6 +1,6 @@
 body{
     font-family: "Roboto", sans-serif;
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
 }
 * {
 	box-sizing: border-box;
@@ -79,7 +79,7 @@ ion-icon{
     width: 935px;
     margin: 0 auto;
     display: flex;
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
     gap: 28px;
 }
 .container-stories{
@@ -131,14 +131,14 @@ p{
 .sidebar{
     width: 293px;
     height: 446px;
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
     position: sticky;
     top: 88px;
     right: 0;
 }
 .primeiro-sidebar{
     height: 56px;
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
     display: flex;
     align-items: center;
 }
@@ -160,14 +160,14 @@ h2{
     color: #8E8E8E;
 }
 .sep{
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
     margin-bottom: 17px;
 }
-.sep p{
-    font-weight: 500px;
+.sep p:last-child{
+    font-weight: 500;
 }
 .sep p:first-child{
     color: #8E8E8E;
@@ -177,15 +177,24 @@ h2{
     height: 32px;
     border-radius: 16px;
 }
-.margin-11{
+.seguidores {
     margin-left: 11px;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .seguidores h2{
+      height: 14px;
+  }
+  .seguidores p{
+      height: 11px;
+  }
 .sugestoes p{
     color: #8E8E8E;
 }
 .sugestao{
     height: 32px;
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -203,7 +212,7 @@ h3{
 }
 .direitos{
     height: 74px;
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -246,6 +255,9 @@ h4{
     justify-content: space-between;
     align-items: center;
     padding: 0 17px;
+}
+.topo-publi ion-icon{
+    font-size: 16px;
 }
 .img-principal{
     width: 612px;
@@ -405,10 +417,10 @@ strong{
     margin-bottom: 0;
     border: none;
     border-radius: 0;
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
 }
 .box-stories{
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
 }
 .publicacao{
     width: 100%;
